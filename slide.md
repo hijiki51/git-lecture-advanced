@@ -35,10 +35,11 @@ _class: user
   
 ## 内容
 - 各種gitコマンド紹介
-  - reset/revert
+  - revert/reset
+  - merge
   - rebase
   - cherry-pick
-  - merge
+
 - githubの便利な機能紹介
 - アンチパターン集
 
@@ -78,9 +79,12 @@ git reset [--soft|--mixed|--hard] <commit>
   - HEADの位置、indexおよびワーキングツリー(addされていないファイル)も指定commitに移動します
 
 
-## reset/recertの違い
+## reset/revertの違い
 
 TODO: treeを書く
 
+## merge
 
-
+```
+git merge <commit>
+```
