@@ -34,7 +34,7 @@ _class: user
 - SysAd/Game
   
 ## 内容
-- 各種gitコマンド紹介
+- 時々使うgitコマンド紹介
   - revert/reset
   - merge
   - rebase
@@ -88,3 +88,68 @@ TODO: treeを書く
 ```
 git merge <commit>
 ```
+
+TODO:図
+
+## rebase
+
+```
+git rebase <commit>
+git rebase --onto <commit> <commit> <commit>
+```
+
+TODO: 図
+
+## cherry-pick
+
+```
+git cherry-pick <commit>
+```
+
+TODO: 図
+
+
+## git**hub**の機能紹介
+- branch protection
+- github actions
+
+
+## branch protection
+
+- Require a pull request before merging
+  - mergeする前にpull requestを作成する必要がある
+  - オプションとしてapproveしないとmergeできなくできる
+- Require status checks to pass before merging
+  - mergeする前にstatus checkを通す必要がある
+
+## github actions
+- githubのCI/CD環境
+- CI
+  - Continuous Integration
+  - 自動テストなどを指す
+- CD
+  - Continuous Delivery/Deployment
+  - 自動リリースなど常に本番環境にデプロイ出来る状態を指す(Delivery)
+  - 本番環境に自動デプロイできる状態を指す(Deployment)
+
+
+## Demo
+
+
+## アンチパターン集
+- バイナリをpushする
+- 不必要なコードをコメントアウトする
+
+
+## バイナリをpushする
+
+- githubではrepositoryの上限は10GB
+- そもそもgitはバイナリファイルを追跡できない
+- LFS(Large File Storage)を使おう(1敗)
+
+
+## 不必要なコードをコメントアウトする
+
+- 変更履歴はgitで管理されている
+  - 基本的に復元可能
+- **無意味**

@@ -1,2 +1,2 @@
-# marp-template
-The template repository of Marp
+# git-lecture-advanced
+git講習会(応用編)
