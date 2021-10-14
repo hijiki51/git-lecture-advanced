@@ -1,6 +1,7 @@
 ---
 marp: true
 theme: traP
+math: katex
 ---
 
 <!--
@@ -11,7 +12,7 @@ headingDivider: 2
 class: slides
 -->
 
-# タイトル
+# git講習会(応用編)
 
 
 
@@ -19,63 +20,67 @@ class: slides
 _class: title
 -->
 
-### サブタイトル・発表者名など
-
-## サブタイトル
-
-まだつくってないよ
-
-## 白紙
-
-## テキスト
-
-あいうえお
-かきくけこ
-さしすせそ
-
-## 箇条書き
-
-- ぽよぽよ
-- あいうえお
-  - かきくけこ
+### @hijiki51
 
 
-## いろいろ
 
-多分だいたいのMarkdown記法に対応してるよ
-
-```javascript
-console.log("おいす～")
-```
-> は?情緒不安定か?ﾏﾝｺﾞｰうまいぜ
-
-$$
-a+b=c
-$$
-
-## いろいろ2
-
-|a|b|
-|-|-|
-|あ|い|
-|こんな感じで|書けるよ|
-
-
-## 画像
-
-あんまり凝ったことはできない
-
-![](sample_image/traP.png)
-
-サイズ変えたり横に並べるぐらいならできる
-
-![w:200px](sample_image/traP.png)![w:200px](sample_image/traP.png)
-
-# ![](sample_image/lolico.png) @trapyojo
+# ![](images/icon.JPG) @hijiki51
 
 <!--
 _class: user
 -->
 
-正方形の画像を載せると多分いい感じにしてくれるよ
-それ以外についてはしらないよ
+- 物理学系二年
+- SysAd/Game
+  
+## 内容
+- 各種gitコマンド紹介
+  - reset/revert
+  - rebase
+  - cherry-pick
+  - merge
+- githubの便利な機能紹介
+- アンチパターン集
+
+
+## revert
+**今回はよく使う用法のみ紹介します**
+```
+git revert <commit>
+```
+### 効果
+- 指定されたcommitを打ち消すcommitが生成されます
+- commitを取り消すときによく使います
+
+
+
+## reset
+```
+git reset [--soft|--mixed|--hard] <commit>
+```
+
+### 効果
+- 指定されたcommitまでtreeの状態を巻き戻します
+- `--soft`
+  - HEADの位置のみ指定commitに移動します
+- `--mixed`
+  - HEADの位置とindex(addされたファイル)を指定commitに移動します
+
+
+## reset
+```
+git reset [--soft|--mixed|--hard] <commit>
+```
+
+### 効果
+
+- `--hard`
+  - HEADの位置、indexおよびワーキングツリー(addされていないファイル)も指定commitに移動します
+
+
+## reset/recertの違い
+
+TODO: treeを書く
+
+
+
