@@ -94,7 +94,7 @@ git reset [--soft|--mixed|--hard] <commit>
 git merge <commit>
 ```
 
-![](images/merge.svg)
+![w:1000](images/merge.svg)
 
 ## rebase
 
@@ -103,15 +103,14 @@ git rebase <commit>
 git rebase --onto <commit> <commit> <commit>
 ```
 
-TODO: 図
-
+![w:800](images/rebase.svg)
 ## cherry-pick
 
 ```
 git cherry-pick <commit>
 ```
 
-TODO: 図
+![w:750](images/cherry-pick.svg)
 
 
 ## git**hub**の機能紹介
@@ -158,3 +157,12 @@ TODO: 図
 - 変更履歴はgitで管理されている
   - 基本的に復元可能
 - **無意味**
+
+
+## 間に合いませんでした
+
+- git flow
+- commit object
+- fast-forward
+- HEADとbranch
+
