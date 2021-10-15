@@ -81,15 +81,20 @@ git reset [--soft|--mixed|--hard] <commit>
 
 ## reset/revertの違い
 
-TODO: treeを書く
+### reset
 
+![w:1000](images/rebase.svg)
+
+## reset/revertの違い
+### revert
+![bg w:700](images/revert.svg)
 ## merge
 
 ```
 git merge <commit>
 ```
 
-TODO:図
+![](images/merge.svg)
 
 ## rebase
 
